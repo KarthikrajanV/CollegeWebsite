@@ -16,7 +16,7 @@ function formValidation() {
     return false;
   }
   // checking email format
-  if (email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+  if (email.value.match( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;)) {
     alert("Please enter a valid email!");
     email.focus();
     return false;
